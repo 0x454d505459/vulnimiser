@@ -3,10 +3,10 @@
 This is a simple script that can help you exploit some really knowed exploits to become the root user (Privilege escalation)
 
 ## How to use
-1 - Download a binary from the releases tab
-2 - Send it to your vulnerable machine
-3 - Give it the execute permission using `chmod +x analyser`
-4 - Run it with `./analyser`
+ - Download a binary from the releases tab
+ - Send it to your vulnerable machine
+ - Give it the execute permission using `chmod +x analyser`
+ - Run it with `./analyser`
 
 ## How to build
 ### Imports
@@ -14,10 +14,10 @@ This is a simple script that can help you exploit some really knowed exploits to
  - os
  - strutils
  - osproc
-
-1 - Clone the repo `git clone https://github.com/0x454d505459/vulnimiser.git`
-2 - Change directory with `cd vulnimiser`
-3 - Use Nim to build it `nim c analyser.nim`
+### Building
+ - Clone the repo `git clone https://github.com/0x454d505459/vulnimiser.git`
+ - Change directory with `cd vulnimiser`
+ - Use Nim to build it `nim c analyser.nim`
 
 ## Disclaimer
 Please be aware that this require a minimum acces on the machine.
