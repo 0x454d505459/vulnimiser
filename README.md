@@ -23,7 +23,10 @@ This is a simple script that can help you exploit some really knowed exploits to
 Please be aware that this require a minimum acces on the machine.
 
 ## Contributing
-If you know any other exploit that can give privileged access please create a new issue, if you know you how to implement crontab also create an issue
+If you know any other exploit that can give privileged access please create a new issue, if you know how to implement crontab also create an issue
 
 ## Other usages
 This can also be used as a privilege maintainer if you run it with privileges
+
+## Knowed Issues
+ - TryHackMe VMs lacks a C binder so the script can't run
